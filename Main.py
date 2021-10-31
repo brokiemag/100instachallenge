@@ -43,34 +43,15 @@ if os.path.isfile("config\\Zoomwithbrawadis_uuid_and_cookie.json"):
 
 bot = Bot() 
 
-bot.login(username = "Zoomwithbrawadis", 
-        password = "Sohan9948081097") 
+bot.login(username = "#username", 
+        password = "#password") 
 
 bot.upload_photo(f"Editday {delta.days}.jpg", 
-                caption =f'''Day {delta.days} Less go ✨+ I am sure i can meet him one day ; Zoom with @Brawadis Comment @Brawadis
-                .
-                .
-                .
-                .
-                .
-                .
-                .
-                @simplistic @fazerug @astonishingawadis @jfiggs @mama.rug @baeeeeelyn @ruq_brawadis_everyday
-                .
-                .
-                .
-                .
-                .
-                .
-                .
-                .
-                .
-                .
-                #brawadis #follow #fazerug #like #brawadsquad #faze #mamarug #paparug #fazeup #youtube #f #followforfollowback #explorepage #brackie #followback #likeforlikes #shermantheverman #likes #fazeclan #explore #awadis #jackie #brawadisandjackie #brandon #jfigggs #rugrats #support #challenge''')
+                caption =#caption goes here
 now = datetime.now()
 
 current_time = now.strftime("%H:%M:%S")
-webhook = DiscordWebhook(url='https://discord.com/api/webhooks/903003003752173608/SsCL4FbTQf41Z2DvCLbCwSQVnUPBoxMjLkHP-s_7_ZbrNWm5Ute9HLUggUIFjYQmWByb', rate_limit_retry=True,
+webhook = DiscordWebhook(url='#webhook url', rate_limit_retry=True,
                             content=f'Image posted succesfully at {current_time}; its Day {delta.days} Dont give up')
 response = webhook.execute()
 os.remove(f"Editday {delta.days}.jpg")
